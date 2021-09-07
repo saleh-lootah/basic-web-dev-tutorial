@@ -9,10 +9,37 @@
   </head>
   <body>
     <h1>Headings Are Block Elements</h1>
+    <img src="https://www.internetingishard.com/html-and-css/css-box-model/inline-vs-block-boxes-f3e662.png" alt="" width="400">
     <p>
-      Paragraphs are blocks, too. <em>However</em>, &lt;em&gt; and &lt; elements
-      are not. They are <strong>inline</strong> elements.
+      Paragraphs are blocks, too. <em>However</em>, &lt;em&gt; (em italises text or puts emphasizes text) and &lt;strong&gt; (strong makes em bold)
+      elements are not. They are <strong>inline</strong> elements.</p>
     </p>
+    <!-- <div style='padding-top: 1px'></div>  -->
     <p>Block elements define the flow</p>
+    <hr>
+    <ul>
+
+      <li><p><strong>Block boxes</strong> always appear <strong>below</strong> the
+        previous block element. This is the “natural” or “static” flow of an HTML
+        document when it gets rendered by a web browser.</p></li>
+      
+      <li><p>The <strong>width of block boxes</strong> is set automatically based
+        on the width of its parent container. In this case, our blocks are always
+        the width of the browser window.</p></li>
+    
+      <li><p>The default <strong>height of block boxes</strong> is based on the
+        content it contains. When you narrow the browser window, the
+        <code>&lt;h1&gt;</code> gets split over two lines, and its height adjusts
+      accordingly.</p></li>
+        
+      <li><p><strong>Inline boxes</strong> don’t affect <strong>vertical
+          spacing</strong>. They’re not for determining layout—they’re for
+        styling stuff <em>inside</em> of a block.</p></li>
+      
+      <li><p>The <strong>width of inline boxes</strong> is based on the content it
+        contains, not the width of the parent element.</p></li>
+    
+    </ul>
+    <div>Button ButtonButtonButton Butto nButtonBu tton</div>
   </body>
 </html>
