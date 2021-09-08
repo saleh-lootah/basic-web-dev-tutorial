@@ -7,9 +7,11 @@
   color: #7e8184;
   font-style: italic;
 }
+/* descendant selectors */
 .synopsis em {
   font-style: normal;
 }
+/* End of descendant selectors */
 .button:link,
 .button:visited {
   display: block;
@@ -54,6 +56,7 @@
   background-color: #eeb75a; /* Yellow */
 }
 
+/* Pseudo classes */
 a:link {
   color: blue;
   text-decoration: none;
@@ -74,3 +77,22 @@ a:visited:hover {
 a:visited:active {
   color: red;
 }
+
+p:last-of-type {
+  margin-bottom: 50px;
+}
+
+/* Child selector */
+.page > p:first-of-type {
+  color: #7e8184;
+  font-style: italic;
+}
+/* End of Child selector */
+/* End of Pseudo classes */
+
+/* ID Selectors */
+/* They work pretty much the same way, except you can only have one element with the same ID per page, which means you can’t reuse styles at all. */
+#button-2 {
+  color: #5d6063;
+}
+/* ID selectors are generally frowned upon. Use class selectors instead. */
